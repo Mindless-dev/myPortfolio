@@ -1,0 +1,11 @@
+.contactInfo {
+  background-color: getColour(accent);
+
+  p {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 700px;
+    margin: 10px;
+    font-size: clamp(16px, 5vw, 30px);
+  }
+}

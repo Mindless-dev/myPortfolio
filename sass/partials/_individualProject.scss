@@ -1,0 +1,15 @@
+.individualProject {
+  h2 {
+    text-align: left;
+    margin: 30px 10px;
+  }
+  p {
+    margin: 10px;
+    font-size: 20px;
+    line-height: 2;
+  }
+  .links {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

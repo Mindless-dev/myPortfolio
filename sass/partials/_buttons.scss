@@ -1,0 +1,133 @@
+.introLink {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  width: clamp(170px, 300px, 400px);
+  padding: 1em 0em;
+  margin: 10px;
+  font-size: 1.2em;
+}
+
+.mainCta {
+  border-radius: 8px;
+  background-color: getColour(mainCta);
+}
+.secondaryCta {
+  border-radius: 8px;
+  background-color: getColour(secondaryCta);
+}
+
+.mainCta:hover {
+  background-color: darken(getColour(mainCta), 10);
+}
+
+.secondaryCta:hover {
+  background-color: darken(getColour(secondaryCta), 10);
+}
+
+.mainCta,
+.secondaryCta {
+  color: white;
+  text-decoration: none;
+}
+
+.skillIcon,
+.loadingIndicator {
+  color: getColour(secondaryAccent);
+  font-size: 5.6em;
+  margin: 20px;
+}
+
+.loadingIndicator {
+  text-align: center;
+  animation-name: spin;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#formSubmit,
+.allProjectsLink {
+  background-color: black;
+  border: none;
+  color: white;
+  font-size: 1.2em;
+  height: 50px;
+  border-radius: 8px;
+  margin: 10px auto;
+}
+#formSubmit {
+  width: 80%;
+}
+#formSubmit:hover,
+.allProjectsLink:hover,
+.back > a:hover {
+  background-color: lighten(black, $amount: 10);
+}
+
+.allProjectsLink {
+  text-decoration: none;
+}
+.individualProject {
+  .links {
+    a {
+      margin: 10px auto;
+      text-align: center;
+      width: 280px;
+      padding: 1em;
+
+      @media (min-width: 600px) {
+        margin: 30px 10px;
+      }
+    }
+  }
+}
+
+.allProjectsLink {
+  width: 220px;
+  height: 60px;
+  text-align: center;
+  line-height: 3;
+  margin: 50px auto;
+}
+
+.mainCta,
+.secondaryCta,
+.allProjectsLink,
+#formsubmit,
+.introLink,
+.back > a {
+  font-weight: bold;
+}
+
+.aboutMainCta,
+.aboutSecondaryCta {
+  text-align: center;
+  line-height: 3.4;
+  height: 80px;
+  font-size: 1.5em;
+}
+
+.aboutSecondaryCta {
+  text-align: center;
+  @media (min-width: 1125px) {
+    width: 394px;
+  }
+}
+
+.LinkdInLink {
+  text-decoration: none;
+  max-width: 200px;
+  margin: 10px;
+  color: getColour(secondaryAccent);
+  font-size: 4em;
+}
+
+.LinkdInLink:hover {
+  color: getColour(primary);
+}

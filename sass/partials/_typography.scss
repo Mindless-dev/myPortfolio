@@ -1,0 +1,98 @@
+main,
+input[type="text"],
+textarea {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: clamp(35px, 37px, 44px);
+}
+
+h2 {
+  font-size: 30px;
+}
+
+.intro {
+  padding-top: 90px;
+  h1,
+  p {
+    color: white;
+    text-align: center;
+  }
+  h1 {
+    font-size: clamp(40px, 5vw, 80px);
+    margin: 5px;
+  }
+  p {
+    font-size: clamp(25px, 5vw, 80px);
+    margin-top: 10px;
+  }
+}
+
+h2,
+h1,
+p,
+h3 {
+  color: white;
+}
+
+h1,
+h2,
+.introTitle a,
+button {
+  font-family: "Roboto Slab", serif;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 800;
+}
+
+ul {
+  li {
+    font-family: "Poppins", sans-serif;
+  }
+}
+
+label {
+  font-size: 22px;
+  color: white;
+}
+
+.logo {
+  font-size: 1.8em;
+  margin: 10px;
+  font-weight: bold;
+}
+
+.logo:hover {
+  text-decoration: none;
+}
+
+.degree {
+  font-weight: bold;
+}
+
+h1,
+h2 {
+  text-align: center;
+
+  @media (min-width: 1129px) {
+    text-align: left;
+  }
+}
+
+.homepageLayout > h2,
+.portofolioContainer > h1 {
+  font-size: 44px;
+  text-align: center;
+  @media (min-width: 1580px) {
+    text-align: left;
+    margin-left: 30px;
+  }
+}
+input[Type="text"],
+textarea {
+  font-size: 1.2em;
+}

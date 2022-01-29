@@ -1,0 +1,65 @@
+.layoutContact {
+  display: flex;
+  flex-direction: column;
+  max-width: 780px;
+  justify-content: center;
+  margin: 10px;
+  padding-top: 13vh;
+  @media (min-width: 610px) {
+    margin: auto;
+  }
+}
+
+.individualProject {
+  display: flex;
+  flex-direction: column;
+  max-width: 1242px;
+  margin: 30px auto;
+}
+
+.homepageLayout,
+.portfolioLayout {
+  max-width: 1560px;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  @media (min-width: 1120px) {
+    margin: auto;
+  }
+}
+
+.aboutLayout {
+  padding-top: 40px;
+  margin: 10px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-areas:
+    "aboutImage"
+    "about"
+    "firstButton"
+    "secondButton";
+  @media (min-width: 1125px) {
+    display: grid;
+    grid-template-areas:
+      "aboutImage  about"
+      "firstButton secondButton";
+  }
+  grid-gap: 20px;
+}
+
+.aboutMe {
+  grid-area: about;
+}
+
+.imageCV {
+  grid-area: aboutImage;
+}
+
+.aboutMainCta {
+  grid-area: firstButton;
+}
+
+.aboutSecondaryCta {
+  grid-area: secondButton;
+}

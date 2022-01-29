@@ -1,0 +1,12 @@
+$colours: (
+  primary: #171717,
+  secondary: #cfcfcf,
+  accent: #3a3c43,
+  mainCta: #c27946,
+  secondaryCta: #082d5d,
+  secondaryAccent: #9e9e9e,
+);
+
+@function getColour($colour) {
+  @return map-get($colours, $colour);
+}

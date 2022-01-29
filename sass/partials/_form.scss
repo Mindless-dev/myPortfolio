@@ -1,0 +1,40 @@
+.formLayout {
+  display: none;
+  background-color: getColour(accent);
+  flex-direction: column;
+  width: 100%;
+  padding: 1.5em;
+  margin: 20px auto;
+  justify-content: center;
+}
+
+form {
+  flex-direction: column;
+  margin: auto;
+  position: relative;
+  input {
+    height: 50px;
+  }
+
+  input,
+  textarea {
+    max-width: 298px;
+    margin-bottom: 15px;
+  }
+}
+
+.successMessage {
+  display: none;
+  background-color: getColour(accent);
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+
+.successText {
+  font-size: 30px;
+  margin: auto;
+  text-align: center;
+}

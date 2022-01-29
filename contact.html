@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="contact information to get in touch with me" />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&family=Noto+Sans:wght@400;700&family=Pacifico&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/a827fe172f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;700&family=Roboto+Slab:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Contact</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <a class="logo" href="index.html">KH</a>
+        <button class="hamburgerMenuBtn"><i class="fas fa-bars"></i></button>
+        <nav class="hidden">
+          <button class="closeBtn"><i class="fas fa-times"></i></button>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a class="active" href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <body>
+        <div class="layoutContact">
+          <div>
+            <h1>Contact Me</h1>
+            <div class="formLayout">
+              <form action="">
+                <label for="name">Name/Company</label>
+                <input type="text" id="name" />
+                <p class="formError" id="nameError">Please input a name or the ocmpany name</p>
+                <label for="email">Email</label>
+                <input type="text" id="email" />
+                <p class="formError" id="emailError">Please input a valid Email Address</p>
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" />
+                <p class="formError" id="subjectError">Please input a subject matter</p>
+                <label for="message">Message</label>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                <p class="formError" id="messageError">Please input a Message</p>
+                <button id="formSubmit">Send Email</button>
+                <div class="successMessage">
+                  <div class="successText">
+                    <p>Email sendt</p>
+                    <p>Thank you for contacting me.</p>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="contactInfo">
+            <p>Email Address:</p>
+            <p>Kennyandreholmen@yahoo.com</p>
+            <p>Phone Number:</p>
+            <p>+4741348506</p>
+            <a class="LinkdInLink" href="https://www.linkedin.com/in/kenny-holmen-b853b4a1/" target="_blank" rel="noopener noreferrer"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </div>
+        </div>
+        <script src="js/contact.js" type="module"></script>
+      </body>
+      <footer></footer>
+    </main>
+  </body>
+</html>

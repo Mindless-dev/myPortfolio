@@ -1,0 +1,87 @@
+.intro {
+  background-image: url("../../images/background/headerimage.jpg");
+  min-height: 93vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.scrollIndicator {
+  margin: 150px auto;
+  background-color: getColour(accent);
+  height: 80px;
+  width: 40px;
+  border-radius: 28px;
+
+  .circle {
+    animation-name: scrollIndicator;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    position: relative;
+    background-color: getColour(secondaryAccent);
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin: 20px auto;
+  }
+}
+
+@keyframes scrollIndicator {
+  0% {
+    top: 10px;
+  }
+
+  50% {
+    top: 40px;
+  }
+  100% {
+    top: 10px;
+  }
+}
+
+.introLinks {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 60px;
+  max-width: 400px;
+  margin: 30px auto;
+}
+
+.intro {
+  h1 {
+    padding-top: 40px;
+  }
+}
+
+.skillset {
+  border-top: solid 1px getColour(secondaryAccent);
+  padding: 2em 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto 20px;
+
+  @media (min-width: 1294px) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 400px);
+    grid-gap: 45px;
+    justify-content: center;
+    margin: 0px;
+    align-items: start;
+  }
+
+  h2,
+  p {
+    text-align: center;
+  }
+}
+
+.programmingIcons {
+  font-size: 0.9em;
+  text-align: center;
+}
+
+.schoolDegree {
+  margin-bottom: 30px;
+  line-height: 0.5;
+}
