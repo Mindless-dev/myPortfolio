@@ -46,6 +46,8 @@ export function createProjects(htmlTarget, projects) {
 
 export function createIndividualProject(project) {
   const htmlTarget = document.querySelector(".individualProjectContainer");
+  const title = document.querySelector("title");
+  title.innerHTML = `Holmen Frontend | ${project.title}`;
 
   htmlTarget.innerHTML = `
   <div class="individualProject">
