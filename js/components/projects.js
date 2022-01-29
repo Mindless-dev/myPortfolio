@@ -3,7 +3,7 @@ export function createProjects(htmlTarget, projects) {
   const { pathname } = document.location;
   target.innerHTML = "";
 
-  if (pathname === "/index.html" || pathname === "/") {
+  if (pathname === "/portfolio/index.html" || pathname === "/portfolio/") {
     projects.forEach((project) => {
       if (project.featured) {
         target.innerHTML += `
